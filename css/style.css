@@ -10,7 +10,6 @@ html,body
 .outer
 {
     width: 100%;
-    height: 400px;
     background-color: #eee;
 
 }
@@ -20,8 +19,73 @@ html,body
     display: flex;
     height: 80%;
     width: 80%;
+    max-width: 1000px;
     margin: 0 auto;
+    justify-content: space-around;
+    padding-bottom: 20px;
    
     
 
 }
+
+h1,p
+{
+    text-align: center;
+    font-family: sans-serif;
+    color: #757575; 
+    margin: 5px;
+}
+
+.textOverImage
+{
+    
+    width: 230px;
+    height: 230px;
+    background-size: 120% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    filter: grayscale(100%);
+
+    
+    
+   
+    
+}
+.textOverImage:hover
+{
+    background-size: 130% 110%;
+    filter: none;
+}
+
+
+.social 
+{
+    display: flex;
+    padding-top: 15px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.social a
+{
+    padding: 0 19px;
+    color: #e53935;
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+.social a:hover
+{
+    color:rgba(229, 57, 53, 0.6);
+    transform: scale(1.2);
+    
+}
+
